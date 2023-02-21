@@ -145,3 +145,12 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+DATABASE_URL = os.getenv("DATABAE_URL")
+
+# Extra lookup directories for collectstatic to find static files
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
