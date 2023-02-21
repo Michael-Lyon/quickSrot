@@ -35,3 +35,6 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+
+
+CSRF_TRUSTED_ORIGINS = ['https://fuck-u-celestine.up.railway.app']
